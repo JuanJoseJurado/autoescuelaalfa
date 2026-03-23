@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Autoescuela Alfa - Autoescuela en Fuengirola</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#00666e",
+              "primary-container": "#2d7f87",
+              "on-primary": "#ffffff",
+              "secondary": "#32666b",
+              "surface": "#f9f9f7",
+              "surface-variant": "#e2e3e1",
+              "on-surface": "#1a1c1b",
+              "on-surface-variant": "#3f494a",
+              "outline-variant": "#bec8c9",
+              "teal": {
+                "50": "#f0f9fa",
+                "100": "#dcf1f2",
+                "800": "#115e59",
+              },
+              "slate": {
+                "50": "#f8fafc",
+                "500": "#64748b",
+                "600": "#475569",
+              }
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "manrope": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "1rem",
+              "xl": "1.5rem",
+              "2xl": "2rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(249, 249, 247, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .mesh-gradient {
+        background-color: #f9f9f7;
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(184,33%,90%,1) 0, transparent 50%), 
+          radial-gradient(at 50% 0%, hsla(184,40%,95%,1) 0, transparent 50%), 
+          radial-gradient(at 100% 0%, hsla(184,33%,90%,1) 0, transparent 50%);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-scroll {
+        display: flex;
+        width: max-content;
+        animation: scroll 40s linear infinite;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/10 shadow-sm">
+<div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-primary font-headline">Autoescuela Alfa</div>
+<div class="hidden md:flex space-x-10 items-center font-semibold text-sm">
+<a class="text-primary" href="#home">Inicio</a>
+<a class="text-slate-600 hover:text-primary transition-colors" href="#benefits">Ventajas</a>
+<a class="text-slate-600 hover:text-primary transition-colors" href="#process">Proceso</a>
+<a class="text-slate-600 hover:text-primary transition-colors" href="#location">Ubicación</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces" target="_blank" rel="noopener" class="hidden lg:block text-slate-600 font-bold text-sm hover:text-primary transition-colors">Ver nota de examen</a>
+<a href="http://matferline.com/validar_ae.php?acceso=alfa" target="_blank" rel="noopener" class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-primary-container transition-all active:scale-95">Acceder al Teórico Online</a>
+</div>
+</div>
+</nav>
+<main>
+<!-- HERO SECTION -->
+<section class="relative flex items-center pt-28 pb-16 mesh-gradient overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-20 right-[-10%] w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-secondary/5 blur-[100px]"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-7">
+<!--
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Inscripciones abiertas 2026
+                    </div>-->
+
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.05]">
+                        Autoescuela en <span class="text-primary">Fuengirola</span> – Consigue tu carnet sin complicaciones
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Permiso B manual y automático, teórico online y prácticas todos los días. La educación premium que se adapta a tu ritmo costero.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces" target="_blank" rel="noopener" class="inline-block text-center bg-transparent text-primary border-2 border-primary/30 px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95">
+                            Ver nota de examen
+                        </a>
+<a href="http://matferline.com/validar_ae.php?acceso=alfa" target="_blank" rel="noopener" class="inline-block text-center bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-all shadow-xl shadow-primary/20 active:scale-95">
+                            Acceder al Teórico Online
+                        </a>
+</div>
+</div>
+<div class="relative mt-8 lg:mt-0">
+  <!-- Vehicle image card -->
+  <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white" style="aspect-ratio:4/3;">
+    <img src="Vehículo 1.jpg" alt="Flota de vehículos Autoescuela Alfa" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-8">
+      <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-3 w-fit">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block"></span>
+        Flota moderna disponible
+      </span>
+      <p class="text-white font-extrabold text-2xl font-headline">Coches manuales y automáticos</p>
+      <p class="text-teal-100 text-sm mt-1">Prácticas todos los días, incluidos festivos</p>
+    </div>
+  </div>
+  <!-- Small floating badge -->
+  <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl px-6 py-4 flex items-center gap-4 border border-outline-variant/10">
+    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+      <span class="material-symbols-outlined text-primary text-xl">verified</span>
+    </div>
+    <div>
+      <div class="text-xs text-slate-400 font-bold uppercase tracking-widest">Exámenes</div>
+      <div class="font-extrabold text-sm text-on-surface">En Marbella · Sin esperas</div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- VALUE PROP SECTION -->
+<section class="bg-white py-16 border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-primary">Libertad total con nuestro Teórico Online</h2>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light">
+                        Nuestra plataforma inteligente te permite estudiar desde la playa, el café o el sofá. Sin horarios rígidos, sin desplazamientos innecesarios y con soporte directo. Una experiencia educativa diseñada para el siglo XXI en la Costa del Sol.
+                    </p>
+</div>
+</div>
+</section>
+<!-- BENEFITS SECTION -->
+<section class="py-16 bg-surface" id="benefits">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Benefit 1 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">devices</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Teórico online 24/7</h3>
+<p class="text-on-surface-variant leading-relaxed">Accede a todo el temario y tests oficiales desde cualquier dispositivo, en cualquier momento y lugar.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">calendar_month</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Prácticas todos los días</h3>
+<p class="text-on-surface-variant leading-relaxed">Incluyendo fines de semana y festivos. Nos adaptamos totalmente a tu agenda laboral o personal.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Sin lista de espera</h3>
+<p class="text-on-surface-variant leading-relaxed">Empezamos las prácticas en cuanto apruebes el teórico. Tu carnet, más rápido que nunca.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">directions_car</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Manual y Automático</h3>
+<p class="text-on-surface-variant leading-relaxed">Elige el vehículo que prefieras. Flota moderna equipada con las últimas tecnologías de seguridad.</p>
+</div>
+<!-- Benefit 5 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Alto % de aprobados</h3>
+<p class="text-on-surface-variant leading-relaxed">Nuestro método personalizado garantiza resultados excepcionales en tiempo récord.</p>
+</div>
+<!-- Benefit 6 -->
+<div class="group p-10 rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-2xl bg-teal-50 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">map</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Exámenes en Marbella</h3>
+<p class="text-on-surface-variant leading-relaxed">Realiza tus pruebas en circuitos familiares con rutas optimizadas para tu éxito absoluto.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROCESS SECTION (TIMELINE) -->
+<section class="py-16 bg-white overflow-hidden" id="process">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-24">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Tu camino al carnet</h2>
+<p class="mt-4 text-on-surface-variant font-medium">Cuatro pasos sencillos para tu independencia al volante</p>
+</div>
+<div class="relative">
+<!-- Desktop Timeline Line -->
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-[2px] bg-slate-100 -translate-y-1/2 z-0">
+<div class="h-full bg-primary/20 w-full rounded-full"></div>
+</div>
+<div class="grid lg:grid-cols-4 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-white border-[6px] border-surface flex items-center justify-center text-2xl font-extrabold text-primary shadow-lg group-hover:scale-110 transition-transform mb-8">1</div>
+<h4 class="font-headline font-extrabold text-xl mb-3">Estudia online</h4>
+<p class="text-on-surface-variant text-sm px-4">Contenido dinámico, tests actualizados y soporte 24/7 en nuestra plataforma.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-white border-[6px] border-surface flex items-center justify-center text-2xl font-extrabold text-primary shadow-lg group-hover:scale-110 transition-transform mb-8">2</div>
+<h4 class="font-headline font-extrabold text-xl mb-3">Aprueba el teórico</h4>
+<p class="text-on-surface-variant text-sm px-4">Te acompañamos a examen cuando estés 100% preparado para aprobar a la primera.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-white border-[6px] border-surface flex items-center justify-center text-2xl font-extrabold text-primary shadow-lg group-hover:scale-110 transition-transform mb-8">3</div>
+<h4 class="font-headline font-extrabold text-xl mb-3">Empieza prácticas</h4>
+<p class="text-on-surface-variant text-sm px-4">Sin esperas. Reserva tus clases prácticas de inmediato con nuestros mejores instructores.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary border-[6px] border-surface flex items-center justify-center text-2xl font-extrabold text-white shadow-lg group-hover:scale-110 transition-transform mb-8">4</div>
+<h4 class="font-headline font-extrabold text-xl mb-3">¡Consigue tu carnet!</h4>
+<p class="text-on-surface-variant text-sm px-4">Supera el examen práctico en Marbella y empieza a disfrutar de la carretera.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LOCATION SECTION -->
+<section class="py-16 bg-surface" id="location">
+<div class="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl relative z-10 border-4 border-white">
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12897.24555217441!2d-4.625983!3d36.539553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d98a42d89f03%3A0x278c3e20a5e2785a!2sFuengirola%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1710000000000"
+  width="100%" height="100%"
+  style="border:0;min-height:320px;"
+  allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Mapa Autoescuela Alfa en Fuengirola"
+></iframe>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-2xl -z-0"></div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Aprende en Fuengirola y Marbella</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Nuestra base central en <span class="font-bold text-primary">Fuengirola</span> ofrece el entorno perfecto para tus primeras tomas de contacto, mientras que nuestras rutas en <span class="font-bold text-primary">Marbella</span> te preparan para el examen final en circuitos reales de la DGT. 
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        También prestamos servicio personalizado a residentes de <span class="font-bold text-primary">Ojén</span>, facilitando el acceso a una educación vial premium sin importar en qué punto de la costa te encuentres.
+                    </p>
+<div class="flex items-start gap-5 p-8 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="mt-1 h-12 w-12 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">pin_drop</span>
+</div>
+<div>
+<div class="font-extrabold text-xl text-on-surface mb-1">Ubicación Estratégica</div>
+<div class="text-on-surface-variant">Proximidad total a las zonas de examen oficiales de la Dirección General de Tráfico.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS SLIDER (fade carousel) -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-6 md:px-12 mb-16">
+<h2 class="font-headline text-3xl font-extrabold text-center">Nuevos conductores cada semana</h2>
+</div>
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div id="testimonials-carousel" class="relative rounded-2xl overflow-hidden shadow-xl" style="min-height:480px;">
+<!-- Slide 1 -->
+<div class="carousel-slide w-full flex flex-col md:flex-row" style="opacity:1;position:relative;transition:opacity 0.9s ease-in-out;">
+<div class="w-full md:w-1/2 overflow-hidden" style="min-height:340px;">
+<img alt="Estudiante feliz con su carnet" class="w-full h-full object-cover" style="min-height:340px;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvr_fxKYC8D9_JXuCj5rnkYOG3xo2CEsVAEbV1XOCvpw38auTSqxpB2gStTw8BxCL8FwYT79UPVDdHci_gldmOlbncuI_souMfal1ru1tHyLndFMZ43YKftjSaEl1zml73xtWJzrIYuIm5BhnQwW6rzHKQBXv1KMcuABbd3BOVwp4Ovp2KdXyWcbd0Q0pbWFPUkm_BFLZu4SIHMeZMeTlifY3WQ671Cf1pMomgJu06-fvx6ZoIviNhVLqi-ATs0_N1t2VyfaFZTvo"/>
+</div>
+<div class="flex-1 flex flex-col justify-center p-10 md:p-16 bg-teal-50">
+<p class="text-4xl font-extrabold text-on-surface font-headline mb-2">Sofía</p>
+<p class="text-primary font-semibold text-lg mb-6">Aprobó a la primera en 2 meses</p>
+<p class="text-on-surface-variant leading-relaxed text-lg">"Estudié el teórico desde casa sin problema. Las clases prácticas fueron muy fáciles de organizar. ¡Recomiendo Autoescuela Alfa al 100%!"</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-slide w-full flex flex-col md:flex-row" style="opacity:0;position:absolute;inset:0;transition:opacity 0.9s ease-in-out;">
+<div class="w-full md:w-1/2 overflow-hidden" style="min-height:340px;">
+<img alt="Conductor con sus llaves" class="w-full h-full object-cover" style="min-height:340px;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1j1z5EN1nQEmiyLUx0Gsb6ASBA75EH9xAvbvxSFT75gFA5Fu9fmRB9R0RlROwTSCkL-DVtDJ9NrLD6VySM9BcHAXvmbab7YatVnOanSaLrlOeLjmOkNPIJGPPuyfg_LGPtIOC9b9L-hjskux0njegOydPgRGxT1DGiCGAwg5CY7ROGHpS3sbwoRWNU1jHtnV078MdnZmRZPNStfD8vL2uo92fLkIq60fbiGHZAkz4e-3C6kV-I0bk4sD3mr4DRZ-A80C8ga4xbR8"/>
+</div>
+<div class="flex-1 flex flex-col justify-center p-10 md:p-16 bg-teal-50">
+<p class="text-4xl font-extrabold text-on-surface font-headline mb-2">Mateo</p>
+<p class="text-primary font-semibold text-lg mb-6">Permiso B Automático</p>
+<p class="text-on-surface-variant leading-relaxed text-lg">"Quería el automático y fue perfecto. Instructor muy paciente y profesional. El examen en Marbella fue más fácil de lo que pensaba."</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="carousel-slide w-full flex flex-col md:flex-row" style="opacity:0;position:absolute;inset:0;transition:opacity 0.9s ease-in-out;">
+<div class="w-full md:w-1/2 overflow-hidden" style="min-height:340px;">
+<img alt="Chica conduciendo su coche" class="w-full h-full object-cover" style="min-height:340px;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsM1jR27n5ari4Jz5gJj-8YPbkJVjlwkpSxi_L_pbwZzogQca4gWRrRMjC_vw4PB0WOTJ5RIqT_mn64zv3l4LoMJcSpGuORJ_Pmdc1uXCiE0cyK4N5CFk2tb3J63xxDzwoDRGGzhCOQrhwl5WxKfN9ARFbrWo9G1aHu3x4XcXZE0RNIODnlOFMzWlmZLh37b9UN6HBWQGGDQMUdRO6nQzlSFAO9mnF9xk61ME2s8r05i-NasodCp-Rv1IysHGAnPgEGSPcvYN6Xuk"/>
+</div>
+<div class="flex-1 flex flex-col justify-center p-10 md:p-16 bg-teal-50">
+<p class="text-4xl font-extrabold text-on-surface font-headline mb-2">Lucía</p>
+<p class="text-primary font-semibold text-lg mb-6">Clases en fin de semana</p>
+<p class="text-on-surface-variant leading-relaxed text-lg">"Trabajo entre semana y solo podía los sábados. En Autoescuela Alfa no tuve ningún problema. ¡Gracias por la flexibilidad!"</p>
+</div>
+</div>
+<!-- Slide 4 -->
+<div class="carousel-slide w-full flex flex-col md:flex-row" style="opacity:0;position:absolute;inset:0;transition:opacity 0.9s ease-in-out;">
+<div class="w-full md:w-1/2 overflow-hidden" style="min-height:340px;">
+<img alt="Hombre con su coche nuevo" class="w-full h-full object-cover" style="min-height:340px;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyi4alkV9Wkg8Zk8_dX2ub-lGviELK6eorMt-LA1b2kmMRoiLdt-3cAxLNpEjC9A7h8vujwGatd2r7j0a9heeVtFcxwnULT1Uz1QxXzcO-DDUNcmbX1gg35G5Ob6qCO07I3et1fgL2Ub8WOchgen_jl73xVTTxLLhHaBK8SMlSDAjVXPHx2yqTVsod0zuCIIV2vIPNvm9bxfpCUwPMe9rTI2RcqrGjMYSma19sLoeOgXhAF9N7AZYt1CjzZqtrORsAZ41cdneYXCA"/>
+</div>
+<div class="flex-1 flex flex-col justify-center p-10 md:p-16 bg-teal-50">
+<p class="text-4xl font-extrabold text-on-surface font-headline mb-2">Daniel</p>
+<p class="text-primary font-semibold text-lg mb-6">Carnet en tiempo récord</p>
+<p class="text-on-surface-variant leading-relaxed text-lg">"En mes y medio con el carnet en el bolsillo. El teórico online me ahorró mucho tiempo. ¡Muy recomendable!"</p>
+</div>
+</div>
+<!-- Dot navigation -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+<button aria-label="Slide 1" class="car-dot w-3 h-3 rounded-full transition-all" data-idx="0" style="background:#00666e;"></button>
+<button aria-label="Slide 2" class="car-dot w-3 h-3 rounded-full transition-all" data-idx="1" style="background:rgba(0,102,110,0.3);"></button>
+<button aria-label="Slide 3" class="car-dot w-3 h-3 rounded-full transition-all" data-idx="2" style="background:rgba(0,102,110,0.3);"></button>
+<button aria-label="Slide 4" class="car-dot w-3 h-3 rounded-full transition-all" data-idx="3" style="background:rgba(0,102,110,0.3);"></button>
+</div>
+</div>
+<script>
+(function(){
+  var slides = document.querySelectorAll('#testimonials-carousel .carousel-slide');
+  var dots = document.querySelectorAll('.car-dot');
+  var cur = 0, timer;
+  function goTo(n){
+    slides[cur].style.opacity='0'; slides[cur].style.position='absolute';
+    dots[cur].style.background='rgba(0,102,110,0.3)'; dots[cur].style.width='12px';
+    cur=n;
+    slides[cur].style.opacity='1'; slides[cur].style.position='relative';
+    dots[cur].style.background='#00666e'; dots[cur].style.width='28px'; dots[cur].style.borderRadius='99px';
+  }
+  function next(){ goTo((cur+1)%slides.length); }
+  function start(){ timer=setInterval(next,4500); }
+  dots.forEach(function(d){ d.addEventListener('click',function(){ goTo(parseInt(this.dataset.idx)); clearInterval(timer); start(); }); });
+  goTo(0); start();
+})();
+</script>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="py-16 px-6">
+<div class="max-w-6xl mx-auto rounded-3xl bg-primary text-on-primary p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
+<!-- Abstract decorations -->
+<div class="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+<div class="relative z-10 space-y-10">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight">¿Listo para tomar el volante?</h2>
+<p class="text-xl md:text-2xl text-teal-50 max-w-3xl mx-auto opacity-90 font-light">
+                        Empieza hoy mismo con nuestro método premium. Sin colas, sin esperas, solo tú y la libertad de la carretera.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6 pt-6">
+<a href="http://matferline.com/validar_ae.php?acceso=alfa" target="_blank" rel="noopener" class="inline-block text-center bg-white text-primary px-12 py-6 rounded-full font-extrabold text-sm uppercase tracking-widest hover:bg-teal-50 transition-all shadow-xl active:scale-95">
+                            Acceder al Teórico Online
+                        </a>
+<a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces" target="_blank" rel="noopener" class="inline-block text-center bg-primary-container/30 text-white border-2 border-white/20 px-12 py-6 rounded-full font-extrabold text-sm uppercase tracking-widest hover:bg-primary-container/50 transition-all active:scale-95">
+                            Ver nota de examen
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-50 w-full rounded-t-[4rem] mt-24 py-20">
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row justify-between items-start gap-16">
+<div class="space-y-6">
+<div class="text-2xl font-extrabold tracking-tighter text-teal-800 font-headline">Autoescuela Alfa</div>
+<p class="font-manrope text-sm text-slate-500 max-w-xs leading-relaxed">
+                    Educación vial premium en Fuengirola, Marbella y Ojén. Líderes en tecnología aplicada al aprendizaje.
+                </p>
+<div class="flex gap-4">
+<div class="w-11 h-11 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 cursor-pointer hover:bg-teal-200 transition-colors">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-11 h-11 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 cursor-pointer hover:bg-teal-200 transition-colors">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-16">
+<div class="space-y-5">
+<h4 class="font-bold text-teal-800 uppercase text-xs tracking-widest">Navegación</h4>
+<ul class="space-y-3 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#home">Inicio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#benefits">Ventajas</a></li>
+<li><a class="hover:text-primary transition-colors" href="#process">Proceso</a></li>
+<li><a class="hover:text-primary transition-colors" href="#location">Ubicación</a></li>
+</ul>
+</div>
+<div class="space-y-5">
+<h4 class="font-bold text-teal-800 uppercase text-xs tracking-widest">Legal</h4>
+<ul class="space-y-3 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Aviso Legal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cookies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Términos</a></li>
+</ul>
+</div>
+<div class="space-y-5">
+<h4 class="font-bold text-teal-800 uppercase text-xs tracking-widest">Contacto</h4>
+<p class="text-sm text-slate-500">Fuengirola, Málaga<br/>info@autoescuelaalfa.es</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pt-20 text-center">
+<p class="text-xs text-slate-400 font-medium">© 2026 Autoescuela Alfa. Todos los derechos reservados.</p>
+</div>
+</footer>
+</body></html>

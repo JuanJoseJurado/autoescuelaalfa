@@ -1,0 +1,75 @@
+Crea una landing page moderna y orientada a conversión para una autoescuela ubicada en Fuengirola, España.
+
+IMPORTANTE:
+- NO debe parecer una web genérica de autoescuela
+- Evita estructuras típicas o plantillas repetidas
+- El diseño debe ser moderno, limpio y con un toque premium pero cercano
+- Usa Tailwind CSS para el diseño
+
+ESTRUCTURA:
+
+1. HERO:
+- Título principal: “Autoescuela en Fuengirola – Consigue tu carnet sin complicaciones”
+- Subtítulo destacando: permiso B manual y automático, teórico online, prácticas todos los días
+- SOLO dos botones principales:
+  - “Ver nota de examen”
+  - “Acceder al Teórico Online”
+- Fondo sutil (gradiente o formas abstractas, NO imágenes típicas de coches)
+
+2. PROPUESTA DE VALOR:
+- Texto corto y persuasivo explicando:
+  - Plataforma de teórico online
+  - Facilidad de estudio
+  - No necesidad de acudir presencialmente
+- Diseño limpio, muy legible y con buen espaciado
+
+3. BENEFICIOS (en formato grid con iconos):
+- Teórico online 24/7
+- Prácticas todos los días (incluidos fines de semana y festivos)
+- Sin lista de espera
+- Coches manuales y automáticos
+- Alto porcentaje de aprobados
+- Exámenes en Marbella
+
+4. PROCESO (muy importante, diseño visual y diferente):
+- Paso 1: Estudia el teórico online
+- Paso 2: Aprueba el examen
+- Paso 3: Empieza prácticas sin esperas
+- Paso 4: Consigue tu carnet
+- Usar un diseño tipo timeline o flujo horizontal (no tarjetas básicas)
+
+5. UBICACIÓN (SEO):
+- Destacar Fuengirola como ubicación principal
+- Mencionar Marbella y Ojén como zonas secundarias
+- Lenguaje natural (sin sobrecargar de palabras clave)
+
+6. SLIDER DE IMÁGENES:
+- Carrusel automático de fotos de alumnos aprobados
+- Transiciones suaves (fade o slide)
+- NO galería estática
+
+7. CTA FINAL:
+- Mensaje potente para animar a empezar
+- Repetir los 2 botones principales
+
+DISEÑO:
+- Mucho espacio en blanco
+- Bordes redondeados (xl o 2xl)
+- Sombras suaves
+- Tipografía limpia y moderna
+- Colores suaves (evitar colores agresivos)
+- Animaciones sutiles (hover, fade-in)
+
+TÉCNICO:
+- Totalmente responsive
+- HTML semántico
+- Botones accesibles
+- Buen uso de spacing con Tailwind
+
+TONO:
+- Profesional pero cercano
+- Español claro y fácil de entender
+- Enfocado en rapidez, comodidad y facilidad
+
+OBJETIVO:
+Maximizar conversiones de usuarios que buscan “autoescuela en Fuengirola”
